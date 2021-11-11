@@ -12,7 +12,7 @@ let book = {
 
 // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
 let objBook = {
-    name: 'Homework',
+    name: 'Apple on the snow',
     pages: 656,
     genre: 'comedy',
     authors: ['Chupryna I.V.', 'Ivanov S.S', 'Petrov S.S.']
