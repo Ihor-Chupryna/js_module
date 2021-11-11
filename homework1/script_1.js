@@ -1,5 +1,5 @@
 // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
+// Вивести кожну змінну за допомогою: console.log , alert, document.write
 let str1 = 'hello';
 let str2 = 'owu';
 let str3 = 'com';
@@ -30,7 +30,7 @@ console.log(str1, str2, str3, str4, num1, num2, num3, num4, num5, num6, num7, bu
 document.write(str1, str2, str3, str4, num1, num2, num3, num4, num5, num6, num7, bul1, bul2);
 
 // - Переприсвоїти кожній змінній з завдання значення на довільне.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
+//Вивести кожну змінну за допомогою: console.log , alert, document.write
 str1 = 'JS';
 str2 = 'module';
 str3 = 'sep-2021';
@@ -66,7 +66,7 @@ let lastName = 'Chupryna';
 let person = `${firstName} ${middleName} ${lastName}`;
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
-//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+// Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
 let enterFirstName = prompt('Імя');
 let enterMiddleName = prompt('По батькові');
 let enterAge = +prompt('Вік');
@@ -81,7 +81,7 @@ console.log(typeof b);
 console.log(typeof c);
 
 // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
-//  В однакових виразах не використовувати однакові оператори!!!
+// В однакових виразах не використовувати однакові оператори!!!
 //  5 < 6 -> true
 // 5 > 6 -> false
 // 5 == 6 -> false
@@ -95,7 +95,7 @@ console.log(typeof c);
 // 123 == '123' -> true
 
 // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-//     let str = "20";
+// let str = "20";
 // let a = 5;
 // document.write(str + a + "<br/>"); -> 205
 // document.write(str - a + "<br/>"); -> 15
