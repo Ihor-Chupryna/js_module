@@ -7,7 +7,7 @@ console.log(result);
 let book = {
     name: 'JavaScript',
     pages: 256,
-    genre: 'horror',
+    genre: 'horror'
 };
 
 // 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
@@ -37,7 +37,7 @@ console.log(s);
 // результат помістіть у змінну v.
 let heightC = 10;
 let dC = 4;
-let v = 3.14 * Math.pow(dC, 2) * heightC;
+let v = 3.14 * Math.pow((dC/2), 2) * heightC;
 console.log(v);
 
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
