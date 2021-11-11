@@ -67,3 +67,37 @@ let person = `${firstName} ${middleName} ${lastName}`;
 
 // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
 //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+let enterFirstName = prompt('Імя');
+let enterMiddleName = prompt('По батькові');
+let enterAge = +prompt('Вік');
+// alert(`Вітаю ${enterFirstName} ${enterMiddleName}. Тобі ${enterAge} років`);
+
+// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+let a = 100;
+let b = '100';
+let c = true;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+
+// - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+//  В однакових виразах не використовувати однакові оператори!!!
+//  5 < 6 -> true
+// 5 > 6 -> false
+// 5 == 6 -> false
+// 5 === 6 -> false
+// 10 == 10 -> true
+// 10 === 10 -> true
+// 10 != 10 -> false
+// 10 < 10 -> false
+// 10 > 10 -> false
+// 123 === '123' -> false
+// 123 == '123' -> true
+
+// - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+//     let str = "20";
+// let a = 5;
+// document.write(str + a + "<br/>"); -> 205
+// document.write(str - a + "<br/>"); -> 15
+// document.write(str * "2" + "<br/>"); -> 40
+// document.write(str / 2 + "<br/>"); -> 10
