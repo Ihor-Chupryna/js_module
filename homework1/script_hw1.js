@@ -70,7 +70,7 @@ let person = `${firstName} ${middleName} ${lastName}`;
 let enterFirstName = prompt('Імя');
 let enterMiddleName = prompt('По батькові');
 let enterAge = +prompt('Вік');
-// alert(`Вітаю ${enterFirstName} ${enterMiddleName}. Тобі ${enterAge} років`);
+alert(`Вітаю ${enterFirstName} ${enterMiddleName}. Тобі ${enterAge} років`);
 
 // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 let a = 100;
