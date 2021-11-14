@@ -32,17 +32,15 @@ if (number === 10) {
 }
 
 // - Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
-// якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 4.
+// якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
 // якщо в змінну записали щось інше, спрацьовує else
-let x = true;
+let x = {};
 if (typeof x === 'number') {
     console.log(1);
 } else if (typeof x === 'string') {
     console.log(2);
-} else if (typeof x === 'boolean') {
+} else if (typeof x === 'boolean' || 'object') {
     console.log(3);
-} else if (typeof x === 'object') {
-    console.log(4);
 } else {
     console.log('error');
 }
