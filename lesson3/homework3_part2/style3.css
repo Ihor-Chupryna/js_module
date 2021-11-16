@@ -1,0 +1,25 @@
+.simpson_card img {
+    width: 250px;
+    height: 400px;
+}
+
+.simpson_card h1 {
+    color: #5347ff;
+}
+
+.product_card {
+    border: solid 1px black;
+    box-shadow: 10px 0 20px black;
+    color: #091e4d;
+}
+
+.product_image {
+    width: 250px;
+    height: 300px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
