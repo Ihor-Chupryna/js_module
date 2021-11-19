@@ -8,6 +8,7 @@ function minNumber(num1, num2, num3) {
         console.log(num3);
     }
 }
+
 minNumber(66, 11, 9);
 
 // створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
@@ -20,6 +21,7 @@ function maxNumber(num1, num2, num3) {
         console.log(num3);
     }
 }
+
 maxNumber(128, 512, 256);
 
 // - створити функцію яка повертає найбільше число з масиву
@@ -32,6 +34,7 @@ function maxNumberArray(arrayNumbers = []) {
     }
     return compareNumber;
 }
+
 let maxNumbArr = maxNumberArray([1, 5528, 256, 0, 256, 999]);
 console.log(maxNumbArr);
 
@@ -39,6 +42,7 @@ console.log(maxNumbArr);
 function minNumberArray(arrayNumbers = []) {
     return Math.min.apply(null, arrayNumbers);
 }
+
 let minNumbArr = minNumberArray([22, 1, 25, 25, 1, 11]);
 console.log(minNumbArr);
 
@@ -50,6 +54,7 @@ function sumElementArray(arrayNumbers = []) {
     }
     return sum;
 }
+
 const result = sumElementArray([23, 69, 11, 56]);
 console.log(result);
 
@@ -61,6 +66,7 @@ function meanValueArray(arrayNumber = []) {
     }
     return sum / arrayNumber.length;
 }
+
 let meanValue = meanValueArray([5, 10, 15, 25, 5]);
 console.log(meanValue);
 
@@ -78,16 +84,19 @@ function minMaxNumb() {
     console.log(max);
     return min;
 }
+
 const maxValue = minMaxNumb(20, 35, 847, 228, 314, 23, 16, 547, 4);
 console.log(maxValue);
 
 // - створити функцію яка заповнює масив рандомними числами
 let arrEmpty = [];
+
 function randomNumbers(emptyArray = []) {
     for (let i = 0; i < 15; i++) {
         emptyArray.push(Math.floor(Math.random() * (20 - 1) + 5));
     }
 }
+
 randomNumbers(arrEmpty);
 console.log(arrEmpty);
 
@@ -97,13 +106,20 @@ function randomNumberWithLimit(arrayIter = [], limit) {
         arrayIter.push(Math.floor(Math.random() * 100));
     }
 }
+
 let arrRandom = [];
 randomNumberWithLimit(arrRandom, 25);
 console.log(arrRandom);
 
 // Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 function arrayReverse(arrayRev = []) {
-    arrayRev.reverse()
+    let array = [];
+    for (let i = arrayRev.length - 1; i >= 0; i--) {
+        array.push(arrayRev[i]);
+        console.log()
+    }
+    return array;
 }
-arrayReverse(arrRandom);
-console.log(arrRandom);
+
+let revArray = arrayReverse(arrRandom);
+console.log(revArray);
