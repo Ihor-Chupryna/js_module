@@ -116,7 +116,6 @@ function arrayReverse(arrayRev = []) {
     let array = [];
     for (let i = arrayRev.length - 1; i >= 0; i--) {
         array.push(arrayRev[i]);
-        console.log()
     }
     return array;
 }
