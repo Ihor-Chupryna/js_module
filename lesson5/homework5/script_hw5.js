@@ -5,7 +5,7 @@ console.log(calcArea(5, 25));
 
 (function (a, b) {
     console.log(a * b);
-}(5, 25));
+})(5, 25);
 
 // - створити функцію яка обчислює та повертає площу кола
 const calcAreaCircle = (radiusCir) => 3.14 * Math.pow(radiusCir, 2);
@@ -13,7 +13,7 @@ console.log(calcAreaCircle(12));
 
 (function (radiusCir) {
     console.log(3.14 * Math.pow(radiusCir, 2));
-}(12));
+})(12);
 
 // - створити функцію яка обчислює та повертає площу циліндру
 const calcAreaCylinder = (radiusCyl, heightCyl) => 2 * 3.14 * radiusCyl * heightCyl;
@@ -21,7 +21,7 @@ console.log(calcAreaCylinder(5, 10));
 
 (function (radiusCyl, heightCyl) {
     console.log(2 * 3.14 * radiusCyl * heightCyl);
-}(5, 10));
+})(5, 10);
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 const numbArray = [12, 25, 36, 56, 2, 256, 698, 65, 1024, 89];
@@ -37,7 +37,7 @@ showElemArray(numbArray);
     for (const item of array) {
         console.log(item);
     }
-}(numbArray));
+})(numbArray);
 
 // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
 const createParagraphWithText = (text) => document.write(`<p>${text}</p>`);
@@ -45,7 +45,7 @@ createParagraphWithText('arrow function');
 
 (function (text) {
     document.write(`<p>${text}</p>`);
-}('hello'));
+})('hello');
 
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 const createList = (text) => document.write(`<ul><li>${text}</li><li>${text}</li><li>${text}</li></ul>`);
@@ -53,7 +53,7 @@ createList('hello');
 
 (function (text) {
     document.write(`<ul><li>${text}</li><li>${text}</li><li>${text}</li></ul>`);
-}('JS'));
+})('JS');
 
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 //Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
@@ -73,7 +73,7 @@ createListWithLimit('item', 5);
         document.write(`<li>${text} ${i + 1}</li>`);
     }
     document.write(`</ul>`);
-}('text', 5));
+})('text', 5);
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 const arrElement = [12, true, 'snap', 58, false, 'index', 584, 'point', true, 'older'];
@@ -92,7 +92,7 @@ listElement(arrElement);
         document.write(`<li>${array[i]}</li>`);
     }
     document.write(`</ul>`);
-}(arrElement));
+})(arrElement);
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
@@ -111,5 +111,5 @@ userBlock(arrayUsers);
         document.write(`<div>${user.id} ${user.name} ${user.age}</div>`);
     }
 }
-(arrayUsers));
+)(arrayUsers);
 
