@@ -4,7 +4,7 @@ const calcArea = (a, b) => a * b;
 console.log(calcArea(5, 25));
 
 (function (a, b) {
-    console.log(a * b)
+    console.log(a * b);
 }(5, 25));
 
 // - створити функцію яка обчислює та повертає площу кола
@@ -12,7 +12,7 @@ const calcAreaCircle = (radiusCir) => 3.14 * Math.pow(radiusCir, 2);
 console.log(calcAreaCircle(12));
 
 (function (radiusCir) {
-    console.log(3.14 * Math.pow(radiusCir, 2))
+    console.log(3.14 * Math.pow(radiusCir, 2));
 }(12));
 
 // - створити функцію яка обчислює та повертає площу циліндру
