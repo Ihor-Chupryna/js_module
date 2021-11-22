@@ -1,5 +1,5 @@
 // Всі функції повинні бути описані стрілочним типом, та selfinvoke!!!!
-//     - створити функцію яка обчислює та повертає площу прямокутника висотою
+// - створити функцію яка обчислює та повертає площу прямокутника висотою
 const calcArea = (a, b) => a * b;
 console.log(calcArea(5, 25));
 
@@ -28,7 +28,7 @@ const numbArray = [12, 25, 36, 56, 2, 256, 698, 65, 1024, 89];
 
 const showElemArray = (array = []) => {
     for (const item of array) {
-        console.log(item)
+        console.log(item);
     }
 }
 showElemArray(numbArray);
@@ -42,6 +42,10 @@ showElemArray(numbArray);
 // - створити функцію яка  створює параграф з текстом. Текст задати через аргумент
 const createParagraphWithText = (text) => document.write(`<p>${text}</p>`);
 createParagraphWithText('arrow function');
+
+(function (text) {
+    document.write(`<p>${text}</p>`);
+}('hello'));
 
 // - створити функцію яка  створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 const createList = (text) => document.write(`<ul><li>${text}</li><li>${text}</li><li>${text}</li></ul>`);
@@ -57,7 +61,7 @@ createList('hello');
 const createListWithLimit = (text, limit) => {
     document.write(`<ul>`);
     for (let i = 0; i < limit; i++) {
-        document.write(`<li>${text} ${i + 1}</li>`)
+        document.write(`<li>${text} ${i + 1}</li>`);
     }
     document.write(`</ul>`);
 }
@@ -66,7 +70,7 @@ createListWithLimit('item', 5);
 (function (text, limit) {
     document.write(`<ul>`);
     for (let i = 0; i < limit; i++) {
-        document.write(`<li>${text} ${i + 1}</li>`)
+        document.write(`<li>${text} ${i + 1}</li>`);
     }
     document.write(`</ul>`);
 }('text', 5));
@@ -104,7 +108,7 @@ userBlock(arrayUsers);
 
 (function (array = []) {
     for (const user of array) {
-        document.write(`<div>${user.id} ${user.name} ${user.age}</div>`)
+        document.write(`<div>${user.id} ${user.name} ${user.age}</div>`);
     }
 }
 (arrayUsers));
