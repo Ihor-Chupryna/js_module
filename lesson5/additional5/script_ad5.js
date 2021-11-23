@@ -1,11 +1,11 @@
 // - Дано натуральное число n. Выведите все числа от 1 до n.
-const showNumber = (numb = 1, n) => {
-    console.log(numb);
-    numb++;
-    if (numb > n) {
+const showNumber = (index = 1, n) => {
+    console.log(index);
+    index++;
+    if (index > n) {
         return;
     }
-    showNumber(numb, n);
+    showNumber(index, n);
 }
 showNumber(1, 15)
 
