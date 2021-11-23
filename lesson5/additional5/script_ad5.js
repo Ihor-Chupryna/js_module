@@ -11,7 +11,7 @@ showNumber(1, 15)
 
 // - Даны два целых числа A и В . Выведите все числа от A до B включительно,
 // в порядке возрастания, если A < B, или в порядке убывания в противном случае.
-const showNumberFromAtoB = (numA, numB) => {
+function showNumberFromAtoB (numA, numB) {
    if (numA <= numB) {
        console.log(numA);
        numA++;
@@ -28,7 +28,7 @@ const showNumberFromAtoB = (numA, numB) => {
    }
 showNumberFromAtoB(numA, numB);
 }
-showNumberFromAtoB(1, 12);
+showNumberFromAtoB(1, 10);
 
 
 
