@@ -7,7 +7,7 @@
 // someeMAIL@i.ua
 // some.email@gmail.com
 
-const checkEmail = (email = ' ') => {
+const checkEmail = (email) => {
     let arr = [];
     for (let i = 0; i < email.length; i++) {
         if (email[i] === '@')
