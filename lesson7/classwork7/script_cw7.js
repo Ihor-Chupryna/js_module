@@ -66,7 +66,7 @@ class NewCar {
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
-function Cinderella(name, age, foot) {
+function Cinderella(name, age, foot = null) {
     this.name = name;
     this.age = age;
     this.footSize = foot;
@@ -78,7 +78,7 @@ const larisa = new Cinderella('Larisa', 29, 42);
 const marina = new Cinderella("Marina", 27, 39);
 const ellen = new Cinderella('Ellen', 28, 41);
 const olga = new Cinderella('Olga', 31, 38);
-const alla = new Cinderella('Alla', 26, 36);
+const alla = new Cinderella('Alla', 26, 44);
 const polina = new Cinderella('Polina', 22, 40);
 const nina = new Cinderella('Nina', 21, 35);
 const oksana = new Cinderella('Oksana', 29, 43);
@@ -92,23 +92,34 @@ class Prince {
     }
 
     findCinderella() {
-
+        let find = 0;
         for (const cinderella of cinderellas) {
             if (this.foundShoe === cinderella.footSize) {
-                console.log(cinderella);
+                find = cinderella;
             }
         }
+        find ? console.log(`I found: ${find.name}`) : console.log('not found');
+
     }
+
+    cinderellaFind() {
+        let find = cinderellas.find(value => value.footSize === this.foundShoe);
+        find ? console.log(`i found ${find.name}`) : console.log(`not found!!`);
+    }
+
 }
 
-const anatoliy = new Prince('Anatoliy', 37, 39);
+const anatoliy = new Prince('Anatoliy', 37, 44);
 console.log(anatoliy);
-anatoliy.findCinderella(37);
+anatoliy.findCinderella();
 
 // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-const ivan = new Prince('Ivan', 36, 36);
-const findCinderella = cinderellas.find(value => value.footSize === ivan.foundShoe);
-console.log(findCinderella);
+anatoliy.cinderellaFind();
+
+
+
+
+
 
 
 
