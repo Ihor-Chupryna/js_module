@@ -14,7 +14,7 @@ for (const element of getUlElement) {
 // c) робить шириниу всіх елементів з класом linkList шириною 50%
 const getClassLinklist = document.getElementsByClassName('linkList');
 for (const element of getClassLinklist) {
-    element.style.width = '50%'
+    element.style.width = '50%';
 }
 
 // d) отримує текст який зберігається в елементі з класом listElement2
@@ -36,7 +36,7 @@ for (const elementA of getAelements) {
     elementA.classList.add('anchor');
     elementA.classList.add(elementA.innerText);
     if (elementA.innerText === 'link3') {
-        elementA.style.fontSize = '40px'
+        elementA.style.fontSize = '40px';
     }
 }
 
@@ -62,9 +62,10 @@ getClassContent1[0].innerText = prompt('enter text');
 // l) отримати елементи p та змінити їм padding на 20px
 const getPelement = document.getElementsByTagName('p');
 for (const elementP of getPelement) {
-    elementP.style.padding = '20px'
+    elementP.style.padding = '20px';
 }
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
 const getClassText2 = document.getElementsByClassName('text2');
-getClassText2[0].innerText = 'Hello Okten'
+console.log(getClassText2)
+getClassText2[0].innerText = 'Hello Okten';
