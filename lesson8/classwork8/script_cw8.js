@@ -67,5 +67,4 @@ for (const elementP of getPelement) {
 
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year. Пример sep-2021)
 const getClassText2 = document.getElementsByClassName('text2');
-console.log(getClassText2)
 getClassText2[0].innerText = 'Hello Okten';
