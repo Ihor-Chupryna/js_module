@@ -7,9 +7,7 @@ console.log(getIdMainHeader);
 
 // b) робить шириниу елементу ul 400px
 const getUlElement = document.getElementsByTagName('ul');
-for (const element of getUlElement) {
-    element.style.width = '400px';
-}
+getUlElement[0].style.width = '400px';
 
 // c) робить шириниу всіх елементів з класом linkList шириною 50%
 const getClassLinklist = document.getElementsByClassName('linkList');
