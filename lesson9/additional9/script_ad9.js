@@ -236,7 +236,7 @@ let usersList = [
 // та властивості внутрішніх об'єктів створити свої окремі блок.
 for (const user of usersList) {
     let userDiv = document.createElement('div');
-    userDiv.innerHTML = '<hr>'
+    userDiv.innerHTML = '<hr>';
     let idDiv = document.createElement('div');
     idDiv.innerText = user.id;
     let nameDiv = document.createElement('div');
@@ -271,6 +271,6 @@ for (const user of usersList) {
           companyElementDiv.innerText = user.company[companyKey];
           companyDiv.appendChild(companyElementDiv);
     }
-    userDiv.append(idDiv, nameDiv, userNameDiv, addressDiv, phoneDiv, websiteDiv, companyDiv);
+    userDiv.append(idDiv, nameDiv, userNameDiv, emailDiv, addressDiv, phoneDiv, websiteDiv, companyDiv);
     document.body.appendChild(userDiv);
 }
