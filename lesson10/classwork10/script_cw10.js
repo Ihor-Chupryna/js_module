@@ -39,7 +39,7 @@ const checkForm = document.forms.checkWordForm;
 checkForm.onsubmit = function (e) {
     e.preventDefault();
     if (censoredWordsArr.find(value => value === checkForm.enterWord.value)) {
-        alert('censored!!!')
+        alert('censored!!!');
     }
 }
 
@@ -50,7 +50,7 @@ checkText.onsubmit = function (e) {
     e.preventDefault();
     for (const element of censoredWordsArr ) {
         if (checkText.text.value.includes(element)) {
-            alert('censored word in the text!!!')
+            alert('censored word in the text!!!');
         }
     }
 }
