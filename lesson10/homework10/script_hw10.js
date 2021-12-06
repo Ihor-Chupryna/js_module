@@ -8,15 +8,14 @@ getBtnHide.onclick = function () {
 
 // - Создайте кнопку, при клике на которую, она будет скрывать сама себя.
 const button = document.getElementsByClassName('click_me')[0];
-button.onclick = function () {
-    button.classList.add('display_none');
-}
+button.onclick = () => button.classList.add('display_none');
+
 
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 // При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 const getFormAge = document.forms.formAge;
-getFormAge.onsubmit = function (e) {
-    e.preventDefault();
+getFormAge.onsubmit = function (ev) {
+    ev.preventDefault();
     let age = this.userAge.value;
     if (age < 18) {
         console.log('you are not 18!!');
@@ -29,9 +28,7 @@ getFormAge.onsubmit = function (e) {
 const getMenuElen = document.getElementsByClassName('menu')[0];
 const getClickElem = document.getElementsByClassName('click_menu')[0];
 getClickElem.style.cursor = 'pointer';
-getClickElem.onclick = function () {
-    getMenuElen.classList.toggle('display_none');
-}
+getClickElem.onclick = () => getMenuElen.classList.toggle('display_none');
 
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 //     Вывести список комментариев в документ, каждый в своем блоке.
