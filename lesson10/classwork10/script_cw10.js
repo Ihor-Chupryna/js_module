@@ -4,7 +4,7 @@
 const user = document.forms.userForm;
 const userAddress = document.forms.userAddressForm;
 const userButton = document.getElementById('createUserObj');
-userButton.onclick = function () {
+userButton.onclick = () => {
     console.log({
         name: user.userName.value, age: user.userAge.value,
         country: userAddress.userCountry, street: userAddress.userStreet.value
@@ -15,8 +15,8 @@ userButton.onclick = function () {
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
 const tableForm = document.forms.tableForm;
-tableForm.onsubmit = function (e) {
-    e.preventDefault();
+tableForm.onsubmit = (ev) => {
+    ev.preventDefault();
     let numberRow = tableForm.tableRow.value;
     let numberColumn = tableForm.tableColumn.value;
     let content = tableForm.content.value;
@@ -36,8 +36,8 @@ tableForm.onsubmit = function (e) {
 // кинути алерт з попередженням. Перевірку робити при натисканні на кнопку
 const censoredWordsArr = ['one', 'two', 'three', 'four', 'five', 'six'];
 const checkForm = document.forms.checkWordForm;
-checkForm.onsubmit = function (e) {
-    e.preventDefault();
+checkForm.onsubmit = (ev) => {
+    ev.preventDefault();
     if (censoredWordsArr.find(value => value === checkForm.enterWord.value)) {
         alert('censored!!!');
     }
@@ -46,8 +46,8 @@ checkForm.onsubmit = function (e) {
 // - Сворити масив не цензцрних слів. Сворити інпут текстового типу. Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 // Кинути алерт з попередженням у випадку якщо містить. Перевірку робити при натисканні на кнопку
 const checkText = document.forms.checkTextForm;
-checkText.onsubmit = function (e) {
-    e.preventDefault();
+checkText.onsubmit = (ev) => {
+    ev.preventDefault();
     for (const element of censoredWordsArr ) {
         if (checkText.text.value.includes(element)) {
             alert('censored word in the text!!!');
