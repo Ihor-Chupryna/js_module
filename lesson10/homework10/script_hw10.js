@@ -18,7 +18,7 @@ getFormAge.onsubmit = function (ev) {
     ev.preventDefault();
     let age = this.userAge.value;
     if (age < 18) {
-        console.log('you are not 18!!');
+        console.log('you are not 18!');
     } else {
         console.log('you are 18 and more');
     }
