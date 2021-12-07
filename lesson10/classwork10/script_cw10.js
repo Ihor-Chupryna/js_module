@@ -2,6 +2,7 @@
 // Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
 const user = document.forms.userForm;
+console.log(user)
 const userAddress = document.forms.userAddressForm;
 const userButton = document.getElementById('createUserObj');
 userButton.onclick = () => {
@@ -50,7 +51,7 @@ checkText.onsubmit = (ev) => {
     ev.preventDefault();
     for (const element of censoredWordsArr ) {
         if (checkText.text.value.includes(element)) {
-            alert('censored word in the text!!!');
+            alert('censored word in the text!!');
         }
     }
 }
