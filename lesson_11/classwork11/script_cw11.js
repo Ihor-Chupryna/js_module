@@ -23,21 +23,11 @@ for (const user of users) {
     addUserBtn.innerHTML = 'add user';
     userDiv.appendChild(addUserBtn);
     addUserBtn.onclick = () => {
-        let getUser = JSON.parse(localStorage.getItem('favorites'));
+        let getUser = JSON.parse(localStorage.getItem('favorites')) || [];
         let userObj = {name: user.name, age: user.age, status: user.status};
-        if (!getUser) {
-            getUser = [];
-            getUser.push(userObj);
-            localStorage.setItem('favorites', JSON.stringify(getUser));
-        }
-        else {
-            getUser.push(userObj);
-            localStorage.setItem('favorites', JSON.stringify(getUser));
-        }
+        getUser.push(userObj);
+        localStorage.setItem('favorites', JSON.stringify(getUser));
     }
 }
-const btnClean = document.createElement('button');
-btnClean.innerText = 'Clean local storage';
-document.body.appendChild(btnClean);
-btnClean.onclick = () => localStorage.clear();
+
 
