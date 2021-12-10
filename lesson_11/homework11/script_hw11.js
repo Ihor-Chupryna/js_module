@@ -26,9 +26,8 @@ car.onsubmit = (ev) => {
     if (!getCar) {
         getCar = [];
         getCar.push(carObj);
-        localStorage.setItem('cars', JSON.stringify(getCar));
     } else {
         getCar.push(carObj);
-        localStorage.setItem('cars', JSON.stringify(getCar));
     }
+    localStorage.setItem('cars', JSON.stringify(getCar));
 }
