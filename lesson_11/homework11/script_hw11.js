@@ -23,6 +23,7 @@ car.onsubmit = (ev) => {
     let volume = car.carVolume.value;
     let carObj = {model: model, type: type, volume: volume}
     let getCar = JSON.parse(localStorage.getItem('cars'));
+    console.log(getCar);
     if (!getCar) {
         getCar = [];
         getCar.push(carObj);
