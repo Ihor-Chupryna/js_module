@@ -28,11 +28,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
         const userDetailsBtn = document.createElement('button');
         userDetailsBtn.classList.add('user-button');
         userDetailsBtn.innerText = 'details';
+        userDiv.appendChild(userDetailsBtn);
         userDetailsBtn.onclick = () => {
             document.location.href = 'user-details.html';
             localStorage.setItem('user', JSON.stringify(userObj));
         }
-        userDiv.appendChild(userDetailsBtn);
     }));
 
 
